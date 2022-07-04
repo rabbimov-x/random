@@ -1,0 +1,101 @@
+.home{
+width: 100%;
+overflow-x: hidden;
+height: auto;
+min-height: 100vh;
+background: linear-gradient(248.66deg, #A8C8ED 0%, #7673DC 100%);
+
+    .navbar{
+        width: 100%;
+        height: fit-content;
+        padding: 30px 4%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .RandomValues{
+            width: 100%;
+            height: fit-content;
+            min-height: 85px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: left;
+            padding: 20px 0 ;
+            .titles{
+                margin: 0;
+                margin-right: 30px;
+                font-family: var(--family);
+                font-size: var(--size40);
+                color: var(--shade-1);
+            }
+        }
+        .navbarBtn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(248.66deg, #7673DC 0%, #7673DC 100%);
+            width: fit-content;
+            border: none;
+            color: var(--shade-1);
+            font-size: var(--size14);
+            font-family: var(--family);
+            line-height: 120%;
+            border-radius: 6px;
+            padding: 13px 21px 13px 21px;
+            cursor: pointer;
+            transition: all 0.07s linear;
+            &:active{
+                transform: scale(0.96);
+                opacity: 0.7;
+            }
+        }
+
+    }
+    .contentTitle{
+        width: 100%;
+        height: fit-content;
+        min-height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .RandomTitle{
+                margin: 10px;
+                font-family: var(--family);
+                font-size: var(--size88);
+                color: var(--shade-1);
+        }
+    }
+    .ChooseContent{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 110px;
+        padding: 40px 4%;
+
+        .ChooseBtn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // background: linear-gradient(248.66deg, #F0B5CE 0%, #8C6BAE 100%);
+            // background: linear-gradient(248.66deg, #FF9696 0%, #FF9696 100%);
+            background: linear-gradient(248.66deg, #8e44ad 0%, #ff7979 100%);
+            width: fit-content;
+            border: none;
+            color: var(--shade-1);
+            font-size: var(--size40);
+            font-family: var(--family);
+            line-height: 120%;
+            border-radius: 30px;
+            padding: 21px 40px 21px 40px;
+            cursor: pointer;
+            transition: all 0.07s linear;
+            &:active{
+                transform: scale(0.96);
+                opacity: 0.7;
+            }
+        }
+    }   
+}
+
