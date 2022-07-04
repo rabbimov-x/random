@@ -14,17 +14,16 @@ export default function Home() {
     }
     function OnRandom(){
         const date = new Date();
-        let ran = parseInt(Number((date.getTime()*Math.random())%(people - 1)) + Number(1));;
-        console.log(randomData.find(item => item.id == ran)); 
-        // typeof randomData.find(item => item.id == ran) ==! "undefined"  &&
-        if( randomData.length < 7  ){
+        let ran =  parseInt(Number((date.getTime()*Math.random())%(people - 1)) + Number(1));
+         if( randomData.length < 6 && typeof randomData.find(item => item.choose === ran) === "undefined" ){
         let data1 = randomData;
-        data1.push({choose: random});
-        dispatch({type: UPDATE_STATE , data: {randomData: data1}})
         setRandom(ran);
+        data1.push({choose: ran});
+        dispatch({type: UPDATE_STATE , data: {randomData: data1}})
         } else{
             setRandom(null)
         }
+        
     }
     useEffect(() => {
         Aos.init({
